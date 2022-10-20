@@ -68,7 +68,21 @@ public class Methods {
 		String result = "";
 		// TODO: Finish this method
 		
+	
+	//create a char array that plugs in target characters from source
+		//checks if target then put replacement as string if not keep going 
+	for(int i=0; i<source.length(); i++) {
+		if (source.charAt(i) == target) {
+	result = result+replacement;
+		}
+		else {
+			result = result+source.charAt(i);
+		}
+	}
+		
+		
 		return result;
+		
 	}
 
 	/**
